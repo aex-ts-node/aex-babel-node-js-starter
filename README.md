@@ -1,34 +1,32 @@
 # Aex node.js Starter
 
-# install 
+## install
 
-```
+```sh
 git clone https://github.com/aex-ts-node/aex-babel-node-js-starter.git
 ```
 
-# test
+## test
 
-
-```
+```sh
 cd aex-babel-node-js-starter
 yarn install / npm install
 npm test
 ```
 
-# run
+## run
 
-```
+```sh
 npm start
 ```
 
-# visit
+## visit
 
 open browser and navigate to `http://localhost:8080/`
 
 You will see the message: "Hello world!"
 
-
-# start your project
+## start your project
 
 Folder `src` is used to place your source code.
 Folder `__test__` is used to place your source code.
