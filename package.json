@@ -1,0 +1,34 @@
+{
+  "name": "aex-bable-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib/src && babel __test__ --out-dir lib/__test__",
+    "start": "npm run build && node lib/src/index.js",
+    "test": "npm run build && nyc mocha lib/__test__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aex-ts-node/aex-babel-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aex-ts-node/aex-babel-example/issues"
+  },
+  "homepage": "https://github.com/aex-ts-node/aex-babel-example#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@babel/plugin-proposal-decorators": "^7.13.5",
+    "@babel/preset-env": "^7.13.9",
+    "core-js": "^3.9.1",
+    "mocha": "^8.3.0",
+    "nyc": "^15.1.0"
+  },
+  "dependencies": {
+    "@aex/core": "^0.13.1",
+    "@babel/polyfill": "^7.12.1"
+  }
+}
