@@ -29,7 +29,8 @@ You will see the message: "Hello world!"
 ## start your project
 
 Folder `src` is used to place your source code.
-Folder `__test__` is used to place your source code.
+
+Folder `__test__` is used to place your test code.
 
 Coverage defaults open to ensure your code is well tested.
 
