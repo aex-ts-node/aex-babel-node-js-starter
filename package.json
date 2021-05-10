@@ -4,6 +4,7 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node",
     "build": "babel src --out-dir lib/src && babel __test__ --out-dir lib/__test__",
     "start": "npm run build && node lib/src/index.js",
     "test": "npm run build && nyc mocha lib/__test__"
@@ -21,10 +22,12 @@
   "devDependencies": {
     "@babel/cli": "^7.13.0",
     "@babel/core": "^7.13.8",
+    "@babel/node": "^7.13.13",
     "@babel/plugin-proposal-decorators": "^7.13.5",
     "@babel/preset-env": "^7.13.9",
     "core-js": "^3.9.1",
     "mocha": "^8.3.0",
+    "nodemon": "^2.0.7",
     "nyc": "^15.1.0"
   },
   "dependencies": {
